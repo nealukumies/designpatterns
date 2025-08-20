@@ -1,14 +1,6 @@
-import java.util.HashMap;
-import java.util.Map;
-
 public class WildernessMap extends AbstractMap {
     public WildernessMap(int width, int height) {
         super(width, height);
-        Map<Character, String> tileTypes = new HashMap<>();
-        tileTypes.put('S', "Swamp");
-        tileTypes.put('W', "Water");
-        tileTypes.put('F', "Forest");
-
     }
 
     @Override

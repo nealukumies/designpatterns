@@ -29,6 +29,7 @@ public class Game {
                 case 2:
                     System.out.println("Generating Wilderness Map...");
                     WildernessMap wildernessMap = (WildernessMap) createMap(2, width, height);
+                    wildernessMap.display();
                     break;
                 default:
                     System.out.println("Invalid choice. Please enter 1, 2, or 3.");

@@ -16,4 +16,9 @@ public class AbstractTile implements Tile {
     public char getCharacter() {
         return character;
     }
+
+    public void action(){
+        System.out.println("Performing action for tile type: " + type);
+        // Additional action logic can be implemented here, not used in this assignment
+    }
 }

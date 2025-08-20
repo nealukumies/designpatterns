@@ -1,6 +1,4 @@
 public class CityMap extends AbstractMap {
-
-
     public CityMap(int width, int height) {
         super(width, height);
     }
