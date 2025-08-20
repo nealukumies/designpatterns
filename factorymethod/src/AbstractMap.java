@@ -10,7 +10,7 @@ abstract class AbstractMap {
     public abstract Tile createTile();
 
     public void display() {
-        System.out.println("Here is the map:");
+        System.out.println("Generated map:");
         for (int i = 0; i < height; i++) {
             for (int j = 0; j < width; j++) {
                 Tile tile = createTile();  // generate tile on the spot
