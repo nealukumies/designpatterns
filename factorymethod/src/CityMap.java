@@ -1,13 +1,21 @@
-public class CityMap extends Map {
-    @Override
-    public void createTile() {
-        // Implementation for creating city tiles
-        System.out.println("Creating city tiles...");
+public class CityMap extends AbstractMap {
+
+
+    public CityMap(int width, int height) {
+        super(width, height);
     }
 
     @Override
-    public void display() {
-        // Implementation for displaying the city map
-        System.out.println("Displaying the city map...");
+    public Tile createTile() {
+        int randomType = (int) (Math.random() * 3);
+        switch (randomType) {
+            case 0:
+                return new RoadTile();
+            case 1:
+                return new ForestTile();
+            case 2:
+                return new BuildingTile();
+        }
+        return null;
     }
 }

@@ -1,11 +1,5 @@
-public class WaterTile implements Tile {
-    @Override
-    public String getType() {
-        return "Water";
-    }
-
-    @Override
-    public char getCharacter() {
-        return 'W';
+public class WaterTile extends AbstractTile {
+    public WaterTile() {
+        super("Water", 'W');
     }
 }

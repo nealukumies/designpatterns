@@ -1,11 +1,6 @@
-public class RoadTile implements Tile {
-    @Override
-    public String getType() {
-        return "Road";
-    }
-
-    @Override
-    public char getCharacter() {
-        return 'R';
+public class RoadTile extends AbstractTile {
+    public RoadTile() {
+        super("Road", 'R');
     }
 }
+
