@@ -6,6 +6,7 @@ public abstract class UIElement {
     }
 
     public abstract void display();
+
     public void setText(String text) {
         this.text = text;
     }
