@@ -5,8 +5,8 @@ public class ButtonA extends Button {
 
     public ButtonA(String text) {
         super(text);
-        this.start = "[";
-        this.end = "]";
+        this.start = "[ ";
+        this.end = " ]";
     }
 
     @Override

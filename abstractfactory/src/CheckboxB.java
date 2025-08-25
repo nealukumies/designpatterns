@@ -7,9 +7,9 @@ public class CheckboxB extends Checkbox {
     @Override
     public void display() {
         if (checked) {
-            System.out.println("(x)" + text);}
+            System.out.println("(x) " + text);}
         else {
-            System.out.println("( )" + text);
+            System.out.println("( ) " + text);
         }
     }
 }

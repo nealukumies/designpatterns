@@ -1,7 +1,6 @@
-public abstract class TextField {
-    protected String text;
+public abstract class TextField extends UIElement{
     public TextField(String text) {
-        this.text = text;
+        super(text);
     }
     public abstract void display();
 }

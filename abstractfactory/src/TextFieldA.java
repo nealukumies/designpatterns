@@ -3,8 +3,8 @@ public class TextFieldA extends TextField {
     private String end;
     public TextFieldA(String text) {
         super(text);
-        this.start = "[";
-        this.end = "]";
+        this.start = "| ";
+        this.end = " |";
     }
     @Override
     public void display() {

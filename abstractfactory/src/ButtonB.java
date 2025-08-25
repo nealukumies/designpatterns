@@ -4,8 +4,8 @@ public class ButtonB extends Button {
 
     public ButtonB(String text) {
         super(text);
-        this.start = "<";
-        this.end = ">";
+        this.start = "< ";
+        this.end = " >";
     }
 
     @Override

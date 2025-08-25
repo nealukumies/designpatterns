@@ -1,10 +1,7 @@
-public abstract class Button {
-    protected String text;
-
+public abstract class Button extends UIElement{
     public Button(String text) {
-        this.text = text;
+        super(text);
     }
-
 
     public abstract void display();
 }

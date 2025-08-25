@@ -1,12 +1,8 @@
-public abstract class Checkbox {
-    protected String text;
+public abstract class Checkbox extends UIElement{
     protected boolean checked;
     public Checkbox(String text, boolean checked) {
-        this.text = text;
+        super(text);
         this.checked = checked;
     }
     public abstract void display();
-    public void setChecked(boolean checked) {
-        this.checked = checked;
-    }
 }
