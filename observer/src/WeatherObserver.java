@@ -11,6 +11,6 @@ public class WeatherObserver implements Observer {
 
     @Override
     public void update(double temperature) {
-        System.out.println("WeatherObserver " + name + ": Weather data has changed! Current temperature is: " + temperature + "°C" );
+        System.out.printf("WeatherObserver %s: Weather data has changed! Current temperature is: %.2f°C%n", name, temperature);
     }
 }

@@ -13,5 +13,12 @@ public class Main {
         station.registerObserver(observer3);
 
         station.start();
+        try {
+            Thread.sleep(10000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        station.removeObserver(0);
+        //The station runs indefinitely, so the program will not terminate on its own.
     }
 }
