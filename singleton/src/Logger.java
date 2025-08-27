@@ -5,45 +5,49 @@ import java.io.IOException;
 public class Logger {
     private static Logger instance;
     private File logFile;
-    FileWriter fileWriter = null;
+    private FileWriter fileWriter = null;
 
     private Logger(){
         try {
             logFile = new File("log.txt");
-            fileWriter = new FileWriter(logFile);
+            fileWriter = new FileWriter(logFile, true); // Append mode to avoid overwriting
         } catch (IOException e){
             System.out.println("Error creating log file: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    public static Logger getInstance(){
+    public static synchronized Logger getInstance(){
         if(instance == null){
             instance = new Logger();
         }
         return instance;
     }
 
-    public void setFileName(String fileName) {
+    public synchronized void setFileName(String fileName) {
         try {
+            if (fileWriter != null) {
+                fileWriter.close();
+            }
             logFile = new File(fileName);
-            fileWriter = new FileWriter(logFile);
+            fileWriter = new FileWriter(logFile, true);
         } catch (IOException e) {
             System.out.println("Error creating log file: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    public void write(String message){
+    public synchronized void write(String message){
         try {
             fileWriter.write(message + "\n");
+            fileWriter.flush();
         }catch (IOException e){
             System.out.println("Error writing to log file: " + e.getMessage());
             e.printStackTrace();
         }
     }
 
-    public void close(){
+    public synchronized void close(){
         try {
             if (fileWriter != null) {
                 fileWriter.close();
