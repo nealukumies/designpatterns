@@ -1,5 +1,5 @@
 # Design Patterns
-This is a repository for the assignments in course ["Design Patterns"}(https://github.com/vesavvo/design_patterns/tree/master) at Metropolia University of Applied Sciences.
+This is a repository for the assignments in course ["Design Patterns"](https://github.com/vesavvo/design_patterns/tree/master) at Metropolia University of Applied Sciences.
 Java is used as the programming language for the assignments. Below is a brief overview of the assignments and their goals that
 are provided by the teacher. 
 ## Assignment 1: Factory Method
