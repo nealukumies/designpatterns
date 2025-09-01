@@ -1,7 +1,3 @@
-import javax.crypto.KeyGenerator;
-import javax.crypto.SecretKey;
-import java.security.NoSuchAlgorithmException;
-
 public class EncryptedPrinter extends PrinterDecorator{
     public EncryptedPrinter(Printer printer) {
         super(printer);
@@ -9,10 +5,10 @@ public class EncryptedPrinter extends PrinterDecorator{
     @Override
     public void print(String message) {
         String encryptedMessage = "";
-        //Character shift encryption
+        //Character shift encryption (Caesar shift, ROT13)
         for (int i = 0; i < message.length(); i++) {
             char c = message.charAt(i);
-            c += 12;
+            c += 13;
             encryptedMessage += c;
         }
         super.print(encryptedMessage);
