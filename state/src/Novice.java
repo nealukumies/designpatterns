@@ -7,20 +7,22 @@ import java.util.Scanner;
 
     @Override
     public void train() {
-        System.out.println(player.getName() + " is training as a Novice.");
-        player.setExperience(player.getExperience() + 5);
+        System.out.println(player.getName() + " is training as a Novice and gaining 10 experience points.");
+        player.setExperience(player.getExperience() + 10);
         player.setLevel();
     }
     @Override
     public void chooseAction() {
         System.out.println(player.getName() + " is a Novice with " + player.getExperience() + " experience and " + player.getHealth() + " health points.");
-        System.out.println("Training increases experience by 5. Intermediate level is reached at 50 experience.");
-        System.out.println("Do you want to train? y/n");
+        System.out.println("Training increases experience by 10. Intermediate level is reached at 50 experience.");
+        System.out.println("Do you want to train or exit the game? (t/e)");
         String input = scanner.nextLine();
-        if (input.equalsIgnoreCase("y")) {
+        if (input.equalsIgnoreCase("t")) {
             train();
         } else {
             System.out.println("You chose not to train.");
+            System.out.println("Thank you for playing!");
+            System.exit(0);
         }
     }
 

@@ -52,6 +52,7 @@ public class Player {
     public void play() {
         while (true) {
             level.chooseAction();
+            System.out.println("-----------------------------------");
         }
     }
 }
