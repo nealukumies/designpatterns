@@ -14,3 +14,5 @@ The goal is to design and implement a system in Java that consists of a weather 
 Your goal is to design and implement a Logger system in Java using the Singleton design pattern.
 ## Assignment 6: Decorator
 In this assignment, you start by implementing a Printer class in Java that provides basic functionality to print a message to the console. Then, the objective is to extend this functionality using the Decorator design pattern.
+## Assignment 7: State
+Your goal is to design and implement a console-based Java application that simulates the development of a game character through different levels of proficiency.
