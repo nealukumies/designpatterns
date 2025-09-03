@@ -1,17 +1,23 @@
-import java.util.Scanner;
-
 public abstract class Level {
     protected Player player;
-    protected Scanner scanner;
+    protected String levelName;
 
     public Level(Player player) {
         this.player = player;
-        scanner = new Scanner(System.in);
     }
 
-    public abstract void chooseAction();
-    public abstract void train();
-    public abstract void meditate();
-    public abstract void fight();
+    public String getLevelName() {
+        return levelName;
+    }
+
+    public void train() {
+        System.out.println("You cannot train at this level.");
+    };
+    public void meditate(){
+        System.out.println("You cannot meditate at this level.");
+    };
+    public void fight(){
+        System.out.println("You cannot fight at this level.");
+    };
 
 }
