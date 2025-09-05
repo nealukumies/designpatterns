@@ -3,7 +3,6 @@ import java.util.TreeSet;
 import java.util.stream.Collectors;
 
 public class SimpleBoardGame extends Game {
-    private String name;
     private Player[] players;
     private int numberOfTiles;
     private HashSet<Integer> badTiles;
@@ -11,7 +10,6 @@ public class SimpleBoardGame extends Game {
     private boolean gameOver;
 
     public SimpleBoardGame() {
-        this.name = "Simple Board Game";
         this.numberOfTiles = 40;
         this.gameOver = false;
     }
