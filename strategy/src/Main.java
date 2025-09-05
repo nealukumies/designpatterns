@@ -18,7 +18,7 @@ public class Main {
         }
 
         System.out.println("Bubble Sort Strategy takes " + bubbleSort.getSortingTime(numbers) + " ms for an array with 30 integers.");
-        //It´s ridiculously slow for large arrays, so test bubblesort with long arrays only when you feel patient enough.
+        //It´s ridiculously slow for large arrays, so test bubblesort with long arrays only when you feel patient enough (several seconds - > over a minute).
         //System.out.println("Bubble Sort Strategy takes " + bubbleSort.getSortingTime(moreNumbers) + " ms for an array with 100 000 integers.");
         System.out.println("Merge Sort Strategy takes " + mergeSort.getSortingTime(numbers) + " ms for an array with 30 integers.");
         System.out.println("Merge Sort Strategy takes " + mergeSort.getSortingTime(moreNumbers) + " ms for an array with 100 000 integers.");
