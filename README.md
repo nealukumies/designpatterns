@@ -18,3 +18,5 @@ In this assignment, you start by implementing a Printer class in Java that provi
 Your goal is to design and implement a console-based Java application that simulates the development of a game character through different levels of proficiency.
 ## Assígnment 8: Template method
 Your goal is to apply a simple game framework to make a game of your choice.
+## Assignment 9: Strategy
+Your goal is to implement at least three sorting algorithms using the Strategy pattern, and empirically compare their performance with two different data sets.
