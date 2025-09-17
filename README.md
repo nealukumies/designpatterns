@@ -22,3 +22,5 @@ Your goal is to apply a simple game framework to make a game of your choice.
 Your goal is to implement at least three sorting algorithms using the Strategy pattern, and empirically compare their performance with two different data sets.
 ## Assignment 10: Chain of Responsibility
 The goal is to create a program that handles different forms of customer feedback messages. 
+## Assignment 11: Memento
+The goal is to add redo functionality and history window to provided GUI that already uses undo functionality with Memento pattern.
