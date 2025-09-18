@@ -47,6 +47,7 @@ public class Gui extends Application {
         hBox.setMargin(colorBox3.getRectangle(), insets);
 
         Label label = new Label("Press Ctrl-Z to undo the last change.");
+        Label label2 = new Label("Press Ctrl-Y to redo the last undone change.");
 
         Button button = new Button("History");
         button.setOnAction(e -> {
@@ -67,19 +68,19 @@ public class Gui extends Application {
             updateHistoryList();
         });
 
-        VBox firstVbox = new VBox(label, button);
+        VBox firstVbox = new VBox(label, label2, button);
         firstVbox.setSpacing(10);
 
         // create a VBox that contains the HBox and the CheckBox
         VBox vBox = new VBox(hBox, checkBox, firstVbox);
         vBox.setMargin(label, insets);
         vBox.setMargin(button, insets);
+        vBox.setMargin(label2, insets);
         vBox.setSpacing(10);
         // call controller when the CheckBox is clicked
         checkBox.setOnAction(event -> {
             controller.setIsSelected(checkBox.isSelected());
         });
-        vBox.setSpacing(10);
 
         // Set the HBox to be the root of the Scene
         Scene scene = new Scene(vBox);
@@ -94,7 +95,6 @@ public class Gui extends Application {
                 controller.redo();
             }
         });
-
 
         stage.setScene(scene);
         stage.setTitle("Memento Pattern Example");
