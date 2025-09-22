@@ -26,3 +26,5 @@ The goal is to create a program that handles different forms of customer feedbac
 The goal is to add redo functionality and history window to provided GUI that already uses undo functionality with Memento pattern.
 ## Assignment 12: Proxy
 The goal is to create a protection proxy that controls access to documents in the document library.
+## Assignment 13: Visitor
+Your goal is to design and implement a simple file system model in Java using the Visitor design pattern.
