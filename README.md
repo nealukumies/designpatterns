@@ -24,3 +24,5 @@ Your goal is to implement at least three sorting algorithms using the Strategy p
 The goal is to create a program that handles different forms of customer feedback messages. 
 ## Assignment 11: Memento
 The goal is to add redo functionality and history window to provided GUI that already uses undo functionality with Memento pattern.
+## Assignment 12: Proxy
+The goal is to create a protection proxy that controls access to documents in the document library.
