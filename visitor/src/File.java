@@ -21,6 +21,6 @@ public class File implements FileSystemElement{
 
     @Override
     public String toString() {
-        return "File{name='" + name + "', size=" + size + "}";
+        return "File{name='" + name + "', size=" + size + " MB}";
     }
 }

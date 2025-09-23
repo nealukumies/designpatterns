@@ -1,5 +1,3 @@
-import java.nio.file.FileVisitor;
-
 public class Main {
     public static void main(String[] args) {
         FileSystemElement file1 = new File("file1.txt", 100);
@@ -20,11 +18,11 @@ public class Main {
 
         FileSystemVisitor sizeVisitor = new SizeCalculatorVisitor();
         dir.accept(sizeVisitor);
-        System.out.println("Total size: " + ((SizeCalculatorVisitor) sizeVisitor).getTotalSize() + " bytes");
+        System.out.println("Total size: " + ((SizeCalculatorVisitor) sizeVisitor).getTotalSize() + " MB");
 
-        FileSystemVisitor SearchVisitor = new SearchVisitor("i");
-        dir.accept(SearchVisitor);
-        System.out.println("Found files: " + ((SearchVisitor) SearchVisitor).getFoundElements());
+        FileSystemVisitor searchVisitor1 = new SearchVisitor("i");
+        dir.accept(searchVisitor1);
+        System.out.println("Found files: " + ((SearchVisitor) searchVisitor1).getFoundElements());
 
         FileSystemVisitor searchVisitor2 = new SearchVisitor("dir");
         dir.accept(searchVisitor2);
