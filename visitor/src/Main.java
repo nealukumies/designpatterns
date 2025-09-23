@@ -18,7 +18,7 @@ public class Main {
 
         FileSystemVisitor sizeVisitor = new SizeCalculatorVisitor();
         dir.accept(sizeVisitor);
-        System.out.println("Total size: " + ((SizeCalculatorVisitor) sizeVisitor).getTotalSize() + " MB");
+        System.out.println("Total size: " + ((SizeCalculatorVisitor) sizeVisitor).getTotalSize() + " bytes");
 
         FileSystemVisitor searchVisitor1 = new SearchVisitor("i");
         dir.accept(searchVisitor1);
