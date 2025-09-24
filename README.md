@@ -28,3 +28,5 @@ The goal is to add redo functionality and history window to provided GUI that al
 The goal is to create a protection proxy that controls access to documents in the document library.
 ## Assignment 13: Visitor
 Your goal is to design and implement a simple file system model in Java using the Visitor design pattern.
+## Assignment 14: Builder
+Your goal is to develop a system to construct various types of computer configurations using the Builder design pattern.
