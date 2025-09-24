@@ -30,3 +30,5 @@ The goal is to create a protection proxy that controls access to documents in th
 Your goal is to design and implement a simple file system model in Java using the Visitor design pattern.
 ## Assignment 14: Builder
 Your goal is to develop a system to construct various types of computer configurations using the Builder design pattern.
+## Assignment 15: Adapter
+Your goal is to develop a Java adapter that interfaces the java.util.Calendar class with a new interface, NewDateInterface, which defines methods for setting and getting the day, month, and year. Additionally, include a method advanceDays() in the interface that advances the date by a given number of days.
