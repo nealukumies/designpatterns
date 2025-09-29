@@ -1,6 +1,8 @@
 import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.image.Image;
 
+//Flyweight class, concrete tiles are flyweight objects. The shared intrinsic state is the type and image of the tile,
+//they are reused across the map. The extrinsic state is the position and size, which are provided during rendering (context-dependant).
 public class AbstractTile implements Tile {
     private String type;
     private Image image;

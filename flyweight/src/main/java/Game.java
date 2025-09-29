@@ -6,6 +6,8 @@ import javafx.scene.canvas.GraphicsContext;
 import javafx.scene.layout.StackPane;
 import javafx.stage.Stage;
 
+// Context in which flyweight objects are used. The map is generated, tile types are decided
+// and shared tiles are retrieved from the TileFactory (flyweight factory) and rendered on the canvas.
 public class Game extends Application {
     private final int width = 30;
     private final int height = 20;
