@@ -34,3 +34,5 @@ Your goal is to develop a system to construct various types of computer configur
 Your goal is to develop a Java adapter that interfaces the java.util.Calendar class with a new interface, NewDateInterface, which defines methods for setting and getting the day, month, and year. Additionally, include a method advanceDays() in the interface that advances the date by a given number of days.
 ## Assignment 16: Bridge
 Your goal is to select a bridge pattern implementation published on the web and extend it with additional functionality. Write pdf documentation about the original implementation and your extension. [Example](https://refactoring.guru/design-patterns/bridge/java/example) is from Refactoring Guru.
+## Assignment 17: Flyweight
+Your goal is to extend the RPG map generator from Assignment 1 (Factory method) by adding graphical rendering of the tiles on the JavaFX canvas.
