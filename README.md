@@ -36,3 +36,5 @@ Your goal is to develop a Java adapter that interfaces the java.util.Calendar cl
 Your goal is to select a bridge pattern implementation published on the web and extend it with additional functionality. Write pdf documentation about the original implementation and your extension. [Example](https://refactoring.guru/design-patterns/bridge/java/example) is from Refactoring Guru.
 ## Assignment 17: Flyweight
 Your goal is to extend the RPG map generator from Assignment 1 (Factory method) by adding graphical rendering of the tiles on the JavaFX canvas.
+## Assignment 18: Prototype
+Your task is to create a book recommendation system that employs the Prototype design pattern.
