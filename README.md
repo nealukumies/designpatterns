@@ -38,3 +38,5 @@ Your goal is to select a bridge pattern implementation published on the web and 
 Your goal is to extend the RPG map generator from Assignment 1 (Factory method) by adding graphical rendering of the tiles on the JavaFX canvas.
 ## Assignment 18: Prototype
 Your task is to create a book recommendation system that employs the Prototype design pattern.
+## Assignment 19: Mediator
+Your goal is to create a real-time chat application that utilizes the Mediator pattern to manage communication between components.
