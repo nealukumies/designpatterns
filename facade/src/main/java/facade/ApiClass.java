@@ -38,10 +38,37 @@ public class ApiClass {
         }
     }
 
-    public String extractAttributeFromJson(String jsonResult, String attribute) throws Exception {
-        JSONParser parser = new JSONParser();
+    public String extractAttributeFromJson(String jsonResult, String attribute) throws IOException {
+        try {
+            JSONParser parser = new JSONParser();
+
         JSONObject jsonObject = (JSONObject) parser.parse(jsonResult);
-        return (String) jsonObject.get(attribute);
+
+        String[] keys = attribute.split("\\.");
+        Object value = jsonObject;
+        // This is for nested attributes like "rates.EUR"
+        for (String key : keys) {
+            if (!(value instanceof JSONObject)) {
+                throw new IllegalArgumentException("Attribute path is invalid: " + attribute);
+            }
+            value = ((JSONObject) value).get(key);
+            if (value == null) {
+                return null;
+            }
+        }
+
+        // Return value as String, whether it is a number or a string
+        if (value == null) {
+            return null;
+        } else if (value instanceof Number) {
+            return value.toString();
+        } else if (value instanceof String) {
+            return (String) value;
+        } else {
+            throw new IllegalArgumentException("Attribute is not a string or number: " + attribute);
+        }
+    } catch (Exception e) {
+        throw new IOException("Error parsing JSON: " + e.getMessage());}
     }
 }
 
