@@ -40,3 +40,5 @@ Your goal is to extend the RPG map generator from Assignment 1 (Factory method) 
 Your task is to create a book recommendation system that employs the Prototype design pattern.
 ## Assignment 19: Mediator
 Your goal is to create a real-time chat application that utilizes the Mediator pattern to manage communication between components.
+## Assignment 20: Iterator
+Your task is to design and implement a Fibonacci sequence generator using the Iterator design pattern in Java.
