@@ -42,3 +42,5 @@ Your task is to create a book recommendation system that employs the Prototype d
 Your goal is to create a real-time chat application that utilizes the Mediator pattern to manage communication between components.
 ## Assignment 20: Iterator
 Your task is to design and implement a Fibonacci sequence generator using the Iterator design pattern in Java.
+## Assignment 21: Facade
+Your task is to design and implement a facade that simplifies the use of a few subsystems that are needed for API access.
