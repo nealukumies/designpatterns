@@ -44,3 +44,5 @@ Your goal is to create a real-time chat application that utilizes the Mediator p
 Your task is to design and implement a Fibonacci sequence generator using the Iterator design pattern in Java.
 ## Assignment 21: Facade
 Your task is to design and implement a facade that simplifies the use of a few subsystems that are needed for API access.
+## Assignment 22: Command
+Your goal is to create a simple pixel art editor that allows users to create pixel graphics, such as an 8x8 pixel stick figure, reminiscent of 1980s home computers.
